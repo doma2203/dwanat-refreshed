@@ -12,16 +12,25 @@ const socialLinks: {
 	link: string;
 	name: string;
 }[] = [
+	// {
+	// 	friendlyName: "Github",
+	// 	link: "https://github.com/doma2203",
+	// 	name: "mdi:github",
+	// },
 	{
-		friendlyName: "Github",
-		link: "https://github.com/chrismwilliams/astro-cactus",
-		name: "mdi:github",
+		friendlyName: "Mail",
+		link: "mailto:hello@dwanat.eu",
+		name: "mdi:envelope",
+	},
+	{
+		friendlyName: "LinkedIn",
+		link: "https://www.linkedin.com/in/dwanat/",
+		name: "mdi:linkedin",
 	},
 ];
 ---
 
 <div class="flex flex-wrap items-end gap-x-2">
-	<p>Find me on</p>
 	<ul class="flex flex-1 items-center gap-x-2 sm:flex-initial">
 		{
 			socialLinks.map(({ friendlyName, isWebmention, link, name }) => (
